@@ -106,6 +106,16 @@ h3 {
     justify-items: center;
     filter: drop-shadow(0 0 2mm rgb(0 0 0));
 }
+.single-card {
+    margin: 0;
+    background: white;
+    width: 100%;
+    display: grid;
+    border-radius: 10px;
+    justify-items: center;
+    filter: drop-shadow(0 0 2mm rgb(0 0 0));
+    text-align: center;
+}
 
 a {
     text-decoration: none;
@@ -121,6 +131,10 @@ a:visited{
 }
 
 .description-text {
+    padding: 20px;
+    margin: 0;
+}
+.about-text {
     padding: 20px;
     margin: 0;
 }
@@ -160,11 +174,18 @@ a:visited{
     justify-items: center;
     justify-content: center;
 }
+.about{
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 30px;
+    justify-items: center;
+    justify-content: center;
+}
 
 @media only screen and (min-width: 600px) {
     .main-block {
         grid-template-columns: max-content minmax(200px, 600px);
-        grid-template-rows: 1fr auto min-content 1fr;
+        grid-template-rows: 1fr auto min-content auto;
         align-items: center;
         justify-content: center;
         column-gap: 20px;
@@ -182,6 +203,12 @@ a:visited{
         justify-content: center;
         column-gap: 20px;
     }
+    .about {
+        grid-template-columns: minmax(auto, 900px);
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
 
     .card {
         display: grid;
@@ -192,6 +219,8 @@ a:visited{
                        / minmax(min-content, 320px) auto;
         align-items: center;
     }
+
+
     .work-name {
         margin-top: 20px;
         grid-area: t;
