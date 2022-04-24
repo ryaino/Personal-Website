@@ -151,16 +151,19 @@ a:visited{
     grid-template-columns: repeat(auto-fill, 150px);
     gap: 20px;
     margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+filter: drop-shadow(0 0 2mm rgb(0 0 0));
 
 }
 
 .small-card{
     display: grid;
     justify-items: center;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 10px;
     padding: 10px;
-    filter: drop-shadow(0 0 2mm rgb(0 0 0));
+    /* filter: drop-shadow(0 0 2mm rgb(0 0 0)); */
 }
 
 .small-logo{
