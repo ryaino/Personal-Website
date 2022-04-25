@@ -133,6 +133,7 @@ a:visited{
 .description-text {
     padding: 20px;
     margin: 0;
+    text-align: justify;
 }
 .about-text {
     padding: 20px;
@@ -198,6 +199,10 @@ h2{
     padding: 30px;
     justify-items: center;
     justify-content: center;
+}
+
+.fa{
+    padding: 0.1em;
 }
 
 @media only screen and (min-width: 600px) {
