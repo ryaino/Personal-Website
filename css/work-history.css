@@ -1,0 +1,64 @@
+.work-history{
+    grid-template-areas:
+        "heading"
+        "binderpos"
+        "fis";
+}
+
+.work-history__heading{
+    grid-area: heading;
+}
+
+.work-history__job{
+    display: grid;
+    grid-template-areas:
+        "logo"
+        "title"
+        "info"
+        "description";
+    justify-items: center;
+}
+
+.work-history__logo{
+    grid-area: logo;
+    width: 200px;
+}
+
+.work-history__title{
+    grid-area: title;
+}
+
+.work-history__info{
+    grid-area: info;
+    text-align: center;
+}
+
+.work-history__description{
+    grid-area: description;
+    padding: 20px;
+    margin: 0;
+    text-align: justify;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .work-history {
+        grid-template-columns: minmax(auto, 900px);
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    .work-history__job{
+        grid-template-rows: repeat(3, auto) 1fr;
+        grid-template-columns: minmax(min-content, 320px) auto;
+        grid-template-areas:
+            "logo title"
+            "logo description"
+            "info description"
+            ".    description";
+        justify-items: center;
+        align-items: center;
+    }
+
+}
