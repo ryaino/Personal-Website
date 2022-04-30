@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <div class="main-block">
+    <div class="grid-container bio">
 
-        <img src="mee.png" alt="me" class="selfie">
+        <img src="images/mee.png" alt="me" class="bio__picture">
 
-        <div class="small-info">
+        <div class="bio__info">
             <div class="material-icons">work</div>
             Backend dev at BinderPOS
             <br>
@@ -32,14 +32,14 @@
                 school
             </span> Computer Science at VUW
             <br>
-            <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+            <span class="material-icons">link</span>
             <a href="https://www.linkedin.com/in/ryan-field-649a1616b/">My Linkedin</a>
             <br>
-            <i class="fa fa-github" style="font-size:24px"></i>
+            <span class="material-icons">link</span>
             <a href="https://github.com/ryaino"> My Github</a>
         </div>
 
-        <div class="center-text">
+        <div class="bio__description">
             <h1>Ryan Field</h1>
 
             <p>
@@ -52,179 +52,198 @@
             </p>
         </div>
 
-        <ul class="link-list">
-            <li class="link">
-                <a href="#technologies">Technologies</a>
+        <ul class="bio__navigation">
+            <li class="button bio__button">
+                <a href="#technologies" class="button__link">Technologies</a>
             </li>
-            <li class="link">
-                <a href="#work-history">Work History</a>
+            <li class="button bio__button">
+                <a href="#work-history" class="button__link">Work History</a>
             </li>
-            <li class="link">
-                <a href="#about">About</a>
+            <li class="button bio__button">
+                <a href="#about" class="button__link">About</a>
             </li>
         </ul>
     </div>
-    <div class="work-history main-block" id="work-history">
-        <h1 class="section-title">
+
+    <div class="work-history grid-container" id="work-history">
+        <h1 class="section-heading work-history__heading">
             Work History
         </h1>
 
+        <div class="section-content">
+            <div class="work-history__job">
+                <img src="images/binderpos.jpg" alt="binderpos-logo" class="work-history__logo">
+                <h2 class="work-history__title">BinderPOS</h2>
+                <p class="work-history__info">
+                    <strong>Backend Developer</strong>
+                    <br>
+                    <strong>Jan 2022 - Present</strong>
+                    <br>
+                    <strong>Remote</strong>
+                </p>
 
-        <div class="card">
-            <img src="binderpos.jpg" alt="binderpos" class="work-image">
-            <h2 class="work-name">BinderPOS</h2>
-            <p class="info-text">
-                <strong>Backend Developer</strong>
-                <br>
-                <strong>Jan 2022 - Present</strong>
-                <br>
-                <strong>Remote</strong>
-            </p>
+                <p class="work-history__description">
+                    My days are currently spent working on the
+                    <span class="material-icons">link</span><a href="https://channelfireball.com">Channel Fireball
+                        Marketplace</a>
+                    which is a growing e-commerce platform.
+                    <br>
+                    <br> Each day is an exciting challenge as I'm constantly implementing new features that will be used
+                    by
+                    thousands of people. This involves creating APIs for multiple microservices, coordinating with our
+                    frontend team and also working with
+                    our cloud infrastructure.
+                    <br>
+                    <br> I love the challenge of planning out the best solution to implement the next big feature. I
+                    also
+                    find my role very rewarding as I love being able to release something I worked on and be able to go
+                    to
+                    the marketplace myself to show
+                    friends and family what I've done.
+                </p>
+            </div>
 
-            <p class="description-text">
-                My days are currently spent working on the <a href="https://channelfireball.com">Channel Fireball
-                    Marketplace</a> which is a growing e-commerce platform.
-                <br>
-                <br> Each day is an exciting challenge as I'm constantly implementing new features that will be used by
-                thousands of people. This involves creating APIs for multiple microservices, coordinating with our
-                frontend team and also working with
-                our cloud infrastructure.
-                <br>
-                <br> I love the challenge of planning out the best solution to implement the next big feature. I also
-                find my role very rewarding as I love being able to release something I worked on and be able to go to
-                the marketplace myself to show
-                friends and family what I've done.
-            </p>
-        </div>
-        <div class="card">
-            <img src="FIS.png" alt="binderpos" class="work-image">
-            <h2 class="work-name">Fidelity Information Services</h2>
-            <p class="info-text">
-                <strong>Software Engineer</strong>
-                <br>
-                <strong>March 2019 - Jan 2022</strong>
-                <br>
-                <strong>Wellington/Remote</strong>
-            </p>
-            <p class="description-text">
-                FIS was my first development job after graduating university. I was tasked with maintaining and updating
-                various financial applications for a range of banks.
-                <br>
-                <br> I was part of a very small team working on multiple Spring Boot applications that also used the
-                inbuilt spring templating, no seperation of frontend and backend! This project and team structure
-                resulted in everyone essentially have
-                equal responsibility for all aspects. Because of this I was able to get a lot of exposure and experience
-                to a lot of other aspects of development rather than just backend coding; such as devops and deployment.
-                I even had to interact with
-                and IBM mainframe from time to time.
-                <br>
-                <br> Throughout my time at FIS, aside from day to day bugfixing, there were two main projects I was a
-                part of. I spent a lot of time upgrading some of our applications from the Struts framework over to
-                Spring. Once that was complete I
-                was then appointed to lead our efforts in resolving the hundreds of the vulnerabilities found throughout
-                our applications.
-            </p>
+            <span class="section-divider"> </span>
+
+            <div class="work-history__job">
+                <img src="images/FIS.png" alt="fis-logo" class="work-history__logo">
+                <h2 class="work-history__title">Fidelity Information Services</h2>
+                <p class="work-history__info">
+                    <strong>Software Engineer</strong>
+                    <br>
+                    <strong>March 2019 - Jan 2022</strong>
+                    <br>
+                    <strong>Wellington/Remote</strong>
+                </p>
+                <p class="work-history__description">
+                    FIS was my first development job after graduating university. I was tasked with maintaining and
+                    updating
+                    various financial applications for a range of banks.
+                    <br>
+                    <br> I was part of a very small team working on multiple Spring Boot applications that also used the
+                    inbuilt spring templating, no seperation of frontend and backend! This project and team structure
+                    resulted in everyone essentially have
+                    equal responsibility for all aspects. Because of this I was able to get a lot of exposure and
+                    experience
+                    to a lot of other aspects of development rather than just backend coding; such as devops and
+                    deployment.
+                    I even had to interact with
+                    and IBM mainframe from time to time.
+                    <br>
+                    <br> Throughout my time at FIS, aside from day to day bugfixing, there were two main projects I was
+                    a
+                    part of. I spent a lot of time upgrading some of our applications from the Struts framework over to
+                    Spring. Once that was complete I
+                    was then appointed to lead our efforts in resolving the hundreds of the vulnerabilities found
+                    throughout
+                    our applications.
+                </p>
+            </div>
         </div>
     </div>
 
-    <div class="technologies main-block" id="technologies">
+    <div class="grid-container technologies " id="technologies">
         <h1 class="section-title">
             Technologies I've Used
         </h1>
 
-        <div class="big-white">
-            <h2>
-                Professional Use
-            </h2>
-            <div class="small-icon-grid">
-                <div class="small-card">
-                    <img src="spring.png" alt="spring" class="small-logo">
-                    <h3>Spring</h3>
-                </div>
-                <div class="small-card">
-                    <img src="java.png" alt="spring" class="small-logo">
-                    <h3>Java</h3>
-                </div>
-                <div class="small-card">
-                    <img src="docker.png" alt="spring" class="small-logo">
-                    <h3>Docker</h3>
-                </div>
-                <div class="small-card">
-                    <img src="gcp.png" alt="spring" class="small-logo">
-                    <h3>GCP</h3>
-                </div>
-                <div class="small-card">
-                    <img src="postgres.png" alt="spring" class="small-logo">
-                    <h3>Postgres</h3>
-                </div>
-                <div class="small-card">
-                    <img src="graphql.png" alt="spring" class="small-logo">
-                    <h3>GraphQL</h3>
-                </div>
-                <div class="small-card">
-                    <img src="hasura.png" alt="spring" class="small-logo">
-                    <h3>Hasura</h3>
-                </div>
-                <div class="small-card">
-                    <img src="kubernetes.png" alt="spring" class="small-logo">
-                    <h3>Kubernetes</h3>
-                </div>
-                <div class="small-card">
-                    <img src="wsl.png" alt="spring" class="small-logo">
-                    <h3>WSL</h3>
-                </div>
-                <div class="small-card">
-                    <img src="gitlab.png" alt="spring" class="small-logo">
-                    <h3>Gitlab</h3>
+        <div class="section-content">
+            <div class="technologies__category">
+                <h2>
+                    Professional Use
+                </h2>
+                <div class="technologies__icon-grid">
+                    <div class="technologies__single">
+                        <img src="images/spring.png" alt="spring-logo" class="technologies__logo">
+                        <h3>Spring</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/java.png" alt="java-logo" class="technologies__logo">
+                        <h3>Java</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/docker.png" alt="docker-logo" class="technologies__logo">
+                        <h3>Docker</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/gcp.png" alt="gcp-logo" class="technologies__logo">
+                        <h3>GCP</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/postgres.png" alt="postgres-logo" class="technologies__logo">
+                        <h3>Postgres</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/graphql.png" alt="graphql-logo" class="technologies__logo">
+                        <h3>GraphQL</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/hasura.png" alt="hasura-logo" class="technologies__logo">
+                        <h3>Hasura</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/kubernetes.png" alt="kubernetes-logo" class="technologies__logo">
+                        <h3>Kubernetes</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/wsl.png" alt="wasl-logo" class="technologies__logo">
+                        <h3>WSL</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/gitlab.png" alt="gitlab-logo" class="technologies__logo">
+                        <h3>Gitlab</h3>
+                    </div>
                 </div>
             </div>
 
-            <span class="divider"> </span>
+            <span class="section-divider"> </span>
 
-            <h2>
-                Personal/Hobby Use
-            </h2>
-            <div class="small-icon-grid">
-                <div class="small-card">
-                    <img src="firebase.png" alt="spring" class="small-logo">
-                    <h3>Firebase</h3>
-                </div>
-                <div class="small-card">
-                    <img src="angular.png" alt="spring" class="small-logo">
-                    <h3>Angular</h3>
-                </div>
-                <div class="small-card">
-                    <img src="sass.png" alt="spring" class="small-logo">
-                    <h3>Sass</h3>
-                </div>
-                <div class="small-card">
-                    <img src="typescript.png" alt="spring" class="small-logo">
-                    <h3>Typescript</h3>
-                </div>
-                <div class="small-card">
-                    <img src="javascript.png" alt="spring" class="small-logo">
-                    <h3>Javascript</h3>
-                </div>
-                <div class="small-card">
-                    <img src="ionic.png" alt="spring" class="small-logo">
-                    <h3>Ionic</h3>
-                </div>
-                <div class="small-card">
-                    <img src="electron.png" alt="spring" class="small-logo">
-                    <h3>Electron</h3>
+            <div class="technologies__category">
+                <h2>
+                    Personal/Hobby Use
+                </h2>
+                <div class="technologies__icon-grid">
+                    <div class="technologies__single">
+                        <img src="images/firebase.png" alt="firebase-logo" class="technologies__logo">
+                        <h3>Firebase</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/angular.png" alt="angular-logo" class="technologies__logo">
+                        <h3>Angular</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/sass.png" alt="sass-logo" class="technologies__logo">
+                        <h3>Sass</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/typescript.png" alt="typescript-logo" class="technologies__logo">
+                        <h3>Typescript</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/javascript.png" alt="javascript-logo" class="technologies__logo">
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/ionic.png" alt="ionic-logo" class="technologies__logo">
+                        <h3>Ionic</h3>
+                    </div>
+                    <div class="technologies__single">
+                        <img src="images/electron.png" alt="electron-logo" class="technologies__logo">
+                        <h3>Electron</h3>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <div class="about main-block" id="about">
+    <div class="about grid-container" id="about">
         <h1 class="section-title">
             About This Site
         </h1>
 
-        <div class="single-card">
-            <p class="about-text">
+        <div class="section-content">
+            <p class="about__text">
                 Initially this website was created as an excercise in testing out some new skills I learned. I may
                 have learned the basics of CSS layout but my methodologies and CSS structure is pretty bad. My next
                 steps will be to first refactor my existing css to be more logical and readable. Once I've done that
@@ -232,7 +251,7 @@
                 think that starting with vanillas CSS will allow me to get a better grip on the basics before I do
                 more advanced things.
             </p>
-            <p class="about-text">
+            <p class="about__text">
                 Atfer getting a Sass library for the site I hope to expand it a bit. I plan to create some more
                 pages to showcase some of my work and act more like a portfolio. This will probably start as some
                 small javascript projects so that I can learn about adding that final piece of the puzzle to this
