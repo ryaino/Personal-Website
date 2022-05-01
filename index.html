@@ -12,10 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&family=Source+Serif+Pro&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javascript/main.js"></script>
     <title>Ryan Field</title>
 </head>
 
 <body>
+
+    <button id="button__scroll-to-top">
+        <span class="material-icons">north</span>
+    </button>
+
     <div class="grid-container bio">
 
         <img src="images/mee.png" alt="me" class="bio__picture">
@@ -53,14 +59,14 @@
         </div>
 
         <ul class="bio__navigation">
-            <li class="button bio__button">
-                <a href="#technologies" class="button__link">Technologies</a>
+            <li class="button bio__button" id="button--scroll-to-technologies">
+               Technologies
             </li>
-            <li class="button bio__button">
-                <a href="#work-history" class="button__link">Work History</a>
+            <li class="button bio__button" id="button--scroll-to-work-history">
+                Work History
             </li>
-            <li class="button bio__button">
-                <a href="#about" class="button__link">About</a>
+            <li class="button bio__button" id="button--scroll-to-about">
+                About
             </li>
         </ul>
     </div>
