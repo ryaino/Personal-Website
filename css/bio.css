@@ -53,7 +53,7 @@
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 967px) {
     .bio__button:nth-last-child(1){
         grid-column: span 2;
         width: 50%;

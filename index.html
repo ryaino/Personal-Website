@@ -12,13 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&family=Source+Serif+Pro&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="import" href="content.html">
+
     <script src="javascript/main.js"></script>
     <title>Ryan Field</title>
 </head>
 
-<body>
+<body id="top">
 
-    <button id="button__scroll-to-top">
+    <button id="button--scroll-to-top" class="button-scroll">
         <span class="material-icons">north</span>
     </button>
 
@@ -59,13 +61,13 @@
         </div>
 
         <ul class="bio__navigation">
-            <li class="button bio__button" id="button--scroll-to-technologies">
+            <li class="button bio__button button-scroll" id="button--scroll-to-technologies">
                Technologies
             </li>
-            <li class="button bio__button" id="button--scroll-to-work-history">
+            <li class="button bio__button button-scroll" id="button--scroll-to-work-history">
                 Work History
             </li>
-            <li class="button bio__button" id="button--scroll-to-about">
+            <li class="button bio__button button-scroll" id="button--scroll-to-about">
                 About
             </li>
         </ul>
@@ -158,47 +160,7 @@
                 <h2>
                     Professional Use
                 </h2>
-                <div class="technologies__icon-grid">
-                    <div class="technologies__single">
-                        <img src="images/spring.png" alt="spring-logo" class="technologies__logo">
-                        <h3>Spring</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/java.png" alt="java-logo" class="technologies__logo">
-                        <h3>Java</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/docker.png" alt="docker-logo" class="technologies__logo">
-                        <h3>Docker</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/gcp.png" alt="gcp-logo" class="technologies__logo">
-                        <h3>GCP</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/postgres.png" alt="postgres-logo" class="technologies__logo">
-                        <h3>Postgres</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/graphql.png" alt="graphql-logo" class="technologies__logo">
-                        <h3>GraphQL</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/hasura.png" alt="hasura-logo" class="technologies__logo">
-                        <h3>Hasura</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/kubernetes.png" alt="kubernetes-logo" class="technologies__logo">
-                        <h3>Kubernetes</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/wsl.png" alt="wasl-logo" class="technologies__logo">
-                        <h3>WSL</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/gitlab.png" alt="gitlab-logo" class="technologies__logo">
-                        <h3>Gitlab</h3>
-                    </div>
+                <div class="technologies__icon-grid" id="icon-grid--professional">
                 </div>
             </div>
 
@@ -208,35 +170,7 @@
                 <h2>
                     Personal/Hobby Use
                 </h2>
-                <div class="technologies__icon-grid">
-                    <div class="technologies__single">
-                        <img src="images/firebase.png" alt="firebase-logo" class="technologies__logo">
-                        <h3>Firebase</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/angular.png" alt="angular-logo" class="technologies__logo">
-                        <h3>Angular</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/sass.png" alt="sass-logo" class="technologies__logo">
-                        <h3>Sass</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/typescript.png" alt="typescript-logo" class="technologies__logo">
-                        <h3>Typescript</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/javascript.png" alt="javascript-logo" class="technologies__logo">
-                        <h3>Javascript</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/ionic.png" alt="ionic-logo" class="technologies__logo">
-                        <h3>Ionic</h3>
-                    </div>
-                    <div class="technologies__single">
-                        <img src="images/electron.png" alt="electron-logo" class="technologies__logo">
-                        <h3>Electron</h3>
-                    </div>
+                <div class="technologies__icon-grid" id="icon-grid--personal">
                 </div>
             </div>
         </div>
@@ -267,8 +201,7 @@
 
     </div>
 
-
-
+    <script src="javascript/technologies.js"></script>
 
 </body>
 
