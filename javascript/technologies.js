@@ -17,7 +17,7 @@ for (const [key, value] of Object.entries(technologies)) {
         techElement.className = 'technologies__single';
 
         let imageElement = document.createElement('img');
-        imageElement.src = 'images/' + name + '.png';
+        imageElement.src = 'images/' + name.toLowerCase() + '.png';
         imageElement.className = 'technologies__logo';
 
         let headerElement = document.createElement('h3');
