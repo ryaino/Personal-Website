@@ -35,7 +35,11 @@
     justify-items: center;
     border-radius: 10px;
     padding: 10px;
-    animation: cardEntrance 700ms ease-out;
+
+}
+
+.active{
+ animation: cardEntrance 700ms ease-out;
     animation-fill-mode: backwards;
 }
 
