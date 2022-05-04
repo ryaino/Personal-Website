@@ -9,11 +9,13 @@
     font-weight: bold;
 
     filter: drop-shadow(0 0 2mm rgb(0 0 0));
+
+    transition: transform 250ms;
 }
 
 .button:hover{
     cursor: pointer;
-    translate: 0 -5px;
+    transform: translateY(-10px);
 }
 
 .button--primary{
