@@ -6,21 +6,7 @@ const technologies = {
         'Firebase', 'Angular', 'Sass', 'Typescript', 'Javascript', 'Ionic', 'Electron'
     ]
 }
-window.addEventListener('scroll', reveal);
-function reveal() {
 
-    let reveals = document.querySelectorAll('.technologies__single');
-
-    for (const iterator of reveals) {
-
-        let windowHeight = window.innerHeight;
-        let revealtop = iterator.getBoundingClientRect().top;
-
-        if(revealtop < windowHeight){
-            iterator.classList.add('active');
-        }
-    }
-}
 
 
 
@@ -41,12 +27,29 @@ for (const [key, value] of Object.entries(technologies)) {
         let headerElement = document.createElement('h3');
         headerElement.textContent = name;
 
-        techElement.style.animationDelay = (index * 150) + 'ms';
+        techElement.style.animationDelay = (100 * index) + 'ms';
         techElement.appendChild(imageElement);
         techElement.appendChild(headerElement);
         component.appendChild(techElement);
         index += 1;
 
+    }
+}
+
+window.addEventListener('scroll', reveal);
+function reveal() {
+
+    let reveals = document.querySelectorAll('.technologies__single');
+
+    for (const iterator of reveals) {
+
+        let windowHeight = window.innerHeight;
+        let revealtop = iterator.getBoundingClientRect().top;
+
+        if (revealtop < windowHeight - 150) {
+            iterator.classList.add('active');
+            iterator.style.opacity = 0;
+        }
     }
 }
 
